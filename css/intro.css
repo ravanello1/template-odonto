@@ -1,0 +1,111 @@
+.introducao-bg {
+  background: #fffbf2;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 40px;
+  justify-content: space-between;
+}
+
+.intro {
+  grid-column: 1;
+}
+
+.intro-conteudo {
+  font-family: Poppins, sans-serif;
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.intro-conteudo p {
+  max-width: 28ch;
+  font-size: 1.5em;
+}
+
+.intro .intro-title {
+  font-family: Cookie, cursive;
+  margin-top: 35px;
+  margin-bottom: 32px;
+  color: #1080d2;
+  font-size: 7.25em;
+  font-weight: 400;
+}
+
+.intro p {
+  margin-bottom: 70px;
+}
+
+.intro button {
+  font-family: Poppins;
+  font-size: 1.25em;
+  font-weight: 500;
+  padding: 12px 40px;
+  background: #06b6d4;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  color: white;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.intro button:hover {
+  background-color: #1080d2;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.6);
+}
+
+.intro picture {
+  display: flex;
+  grid-column: -1;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+}
+
+.intro picture img {
+  width: 480px;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 35px;
+  position: absolute;
+}
+
+@media (max-width: 720px) {
+  .introducao-bg {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 0px;
+  }
+  .intro .intro-title {
+    font-size: 5.5em;
+  }
+  .intro p {
+    margin-bottom: 35px;
+  }
+  .intro-conteudo {
+    padding-bottom: 26px;
+    grid-column: -1;
+  }
+  .intro img {
+    grid-row: 2;
+    width: 360px;
+    margin-bottom: 35px;
+  }
+  .intro picture img {
+    position: initial;
+  }
+  .intro button {
+    margin: 0 auto;
+  }
+}

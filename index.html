@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/dente-logo.png" type="image/x-icon">
+  <title>Clinica Super Sorriso</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="img/dente-logo.png" alt=""></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="#procedimentos">Procedimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="introducao-bg">
+    <div class="intro container" id="sobre">
+      <div class="intro-conteudo">
+        <h1 class="c10 intro-title">Super Sorriso</h1>
+        <p>Me chamo Sorriso e sou responsável pela sua autoestima, trazendo de volta o sorriso que cria memórias.</p>
+        <button onclick="window.open('https://wa.me/5541984815419?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20marcar%20um%20hor%C3%A1rio', '_blank')" class="contato1">CONTATO</button>
+      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/dentista.jpg">
+        <img src="img/dentista.jpg" alt="">
+      </picture>
+    </div>
+    </div>
+  </main>
+
+  <div class="procedimentos-bg">
+    <section class="procedimentos" id="procedimentos">
+      <h1 class="container">Escolha o seu procedimento</h1>
+      <div class="slide-wrapper">
+        <ul>
+          <li><img src="img/canal.jpg" alt="">
+            <h3 class="font-1-xl">Canal</h3><span class="font-2-m c8">Procedimento de Canal feito com os melhores equipamentos do mercado!</span>
+          </li>
+          <li><img src="img/limpeza.jpg" alt="">
+            <h3 class="font-1-xl">Limpeza</h3><span class="font-2-m c8">Procedimento simples de limpeza dental!</span>
+          </li>
+          <li><img src="img/raiox.jpg" alt="">
+            <h3 class="font-1-xl">Raio X</h3><span class="font-2-m c8">Raio X panorâmico completo</span>
+          </li>
+        </ul>
+      </div>
+      <button onclick="window.open('https://wa.me/5541984815419?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20marcar%20um%20hor%C3%A1rio', '_blank')" class="procedimento-contato container"><img src="img/whatsapp.svg" alt="">Agendar Agora</button>
+    </section>
+  </div>
+
+  <div class="depoimento-bg">
+    <section class="depoimento">
+      <div>
+        <img src="img/pessoa-sorrindo.jpg" alt="">
+      </div>
+      <div class="depoimento-conteudo">
+        <blockquote>
+          <p>Estou amando as facetas. Pensei que ia me incomodar mas na verdade são muito confortáveis. Os profissionais são perfeitamente qualificados e levaram o procedimento com muito carinho. Recomendo demais!</p>
+        </blockquote>
+      </div>
+    </section>
+  </div>
+
+  <div class="contato-bg">
+    <div class="contato container" id="contato">
+      <h1 class="container">Contato</h1>
+      <div class="contato-conteudo">
+        <div class="mapa">
+          <img src="img/mapa.png" alt="Mapa com a localização do Studio">
+        </div>
+        <ul class="dados">
+          <li>dentista@gmail.com</li>
+          <li>+55 (41) 9999999</li>
+          <li>Rua Logo Ali, 26</li>
+          <li>Curitiba - PR</li>
+          <li>Segunda à Sexta das 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg">
+    <div class="logo-footer">
+      <img src="img/dente-logo.png" alt="Logo completo do Dell Beauty Studio">
+    </div>
+    <div class="footer container">
+      <div class="footer-contato">
+        <h3>CONTATO</h3>
+        <ul>
+          <li>+55 41 9999999</li>
+          <li>dentista@gmail.com</li>
+          <li>Rua Logo Ali, 26</li>
+          <li>Curitiba - PR</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.instagram.com/"><img src="img/instagram.svg" alt=""></a>
+          <a href="https://www.facebook.com"><img src="img/facebook.svg" alt=""></a>
+          <a href="https://wa.me/5541998615978,%20vim%20do%20site%20e%20gostaria%20de%20marcar%20um%20hor%C3%A1rio"><img src="img/whatsapp.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-infos">
+        <h3>INFORMAÇÕES</h3>
+        <nav>
+          <ul>
+            <li><a href="#procedimentos">Procedimento</a>s</li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy c5">Dentista © Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

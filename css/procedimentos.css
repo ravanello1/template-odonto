@@ -1,0 +1,122 @@
+.procedimentos-bg {
+  background: #6d9594;
+}
+
+.procedimentos {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  z-index: 1;
+}
+
+.procedimentos h1 {
+  margin-bottom: 40px;
+  color: #fffbf2;
+}
+
+.procedimentos ul {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.procedimentos h3 {
+  margin-top: 30px;
+  font-family: Poppins;
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  color: #fffbf2;
+}
+
+.procedimentos span {
+  padding-top: 8px;
+  display: inline-block;
+  font-family: Poppins;
+  color: #fffbf2;
+  width: 32ch;
+  overflow: hidden;
+}
+
+.procedimentos h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: turquoise;
+  transition: width 0.2s;
+}
+
+.procedimentos button img {
+  padding-right: 15px;
+  width: 36px;
+}
+
+.procedimentos li img {
+  width: 360px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .5);
+  will-change: transform;
+  transition: 0.3s ease;
+}
+
+.procedimentos li img:hover{
+  transform: scale(1.05) translateY(10px);
+  + h3::before {
+    width: 20px;
+  }
+}
+
+.procedimentos button {
+  margin-top: 80px;
+  background: #01b93b;
+  display: flex;
+  align-items: center;
+  padding: 12px 40px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #fffbf2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 90ms ease;
+}
+
+.procedimentos button:hover {
+  background-color: #128c7e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.6);
+}
+
+@media (max-width: 720px) {
+  .procedimentos-bg {
+    padding-bottom: 0px;
+  }
+  .procedimentos {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .procedimentos ul {
+    display: block;
+  }
+  .procedimentos li {
+    margin-top: 20px;
+  }
+  .procedimentos h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+
+  .procedimentos button {
+    padding: 10px 25px;
+    margin: 20px auto;
+  }
+}
