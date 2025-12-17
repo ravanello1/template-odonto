@@ -78,6 +78,7 @@
 
 @media (max-width: 720px) {
   .introducao-bg {
+    max-width: 100%;
     padding-top: 5px;
     padding-bottom: 15px;
   }
@@ -88,7 +89,7 @@
     gap: 0px;
   }
   .intro .intro-title {
-    font-size: 5.5em;
+    font-size: 4.5em;
   }
   .intro p {
     margin-bottom: 35px;

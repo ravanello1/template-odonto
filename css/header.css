@@ -71,6 +71,7 @@
   .menu ul {
     display: flex;
     gap: 20px;
+    margin-right: 5px;
   }
   .menu ul{
     transform: rotate(180deg);
