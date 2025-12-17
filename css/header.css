@@ -36,20 +36,34 @@
 
 @media (max-width: 720px) {
   .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px;
+    justify-items: center;
   }
-
   .header img {
+    grid-column: 1;
     margin: 0 auto;
-    transform: scale(1);
+    transform: scale(1.1);
+  }
+  .menu ul {
+    display: flex;
+    gap: 20px;
+  }
+  .menu ul{
+    transform: rotate(180deg);
   }
   .menu li {
-    display: flex;
+    display: block;
+    grid-column: -1;
     font-size: 14px;
-    padding: 2px 4px;
+    padding-left: 12px;
+    padding-right: 12px;
     background: #1080d2;
-    border: solid 3px lightblue;
-    border-radius: 50px;
+    border: solid 2px lightblue;
+    border-radius: 20px;
+  }
+  .menu ul > li {
+    transform: rotate(-180deg);
+    justify-content: end;
   }
 }

@@ -78,13 +78,13 @@
 
 @media (max-width: 720px) {
   .introducao-bg {
-    padding-top: 35px;
+    padding-top: 5px;
     padding-bottom: 15px;
   }
   .intro {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 0px;
   }
   .intro .intro-title {
@@ -103,7 +103,7 @@
     margin-bottom: 35px;
   }
   .intro picture img {
-    position: initial;
+    position: relative;
   }
   .intro button {
     margin: 0 auto;
