@@ -66,3 +66,8 @@
     font-size: .75em;
   }
 }
+@media (max-width: 300px) {
+  .depoimento-conteudo p {
+    font-size: .5em;
+  }
+}

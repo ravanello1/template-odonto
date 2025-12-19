@@ -32,15 +32,18 @@
   background: turquoise;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .contato-conteudo {
     display: block;
     margin-top: 20px;
   }
   .dados {
     margin-top: 30px;
+    justify-self: center;
   }
   .mapa iframe {
+    display: block;
+    justify-self: center;
     object-fit: cover;
     max-width: 100%;
   }

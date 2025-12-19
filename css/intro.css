@@ -15,7 +15,7 @@
 
 .intro-conteudo {
   font-family: Poppins, sans-serif;
-  align-self: end;
+  align-self: center;
   padding-bottom: 200px;
 }
 
@@ -76,7 +76,7 @@
   position: absolute;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
   .introducao-bg {
     max-width: 100%;
     padding-top: 5px;
@@ -84,29 +84,36 @@
   }
   .intro {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 600px 1fr;
     margin-top: 5px;
     gap: 0px;
-  }
-  .intro .intro-title {
-    font-size: 4.5em;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+
   }
   .intro p {
     margin-bottom: 35px;
   }
   .intro-conteudo {
     padding-bottom: 26px;
-    grid-column: -1;
+    grid-column: 0;
   }
   .intro img {
-    grid-row: 2;
-    width: 360px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
     margin-bottom: 35px;
   }
   .intro picture img {
-    position: relative;
+    position: static;
   }
   .intro button {
     margin: 0 auto;
+  }
+}
+@media (max-width: 800px){
+  .intro {
+    display: block;
   }
 }
