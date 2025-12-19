@@ -82,16 +82,26 @@
     .footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  .footer-info {
+    margin-right: 120px;
   }
   .logo-footer {
-    margin-left: 20px;
+    margin-left: 130px;
+    margin-top: 250px;
+  }
+  .footer-copy {
+    margin-top: 0px;
   }
 }
 @media (max-width: 300px){
-  .logo-footer {
-    position: absolute;
-    opacity: .1;
-    margin-top: 240px;
+  .logo-footer{
+    display:none;
+  }
+   .footer-copy {
+    font-size: .5em;
   }
 
 }

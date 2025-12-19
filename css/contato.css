@@ -48,3 +48,8 @@
     max-width: 100%;
   }
 }
+@media (max-width: 300px) {
+    .dados li {
+      font-size: .875em;
+  }
+}
