@@ -79,6 +79,10 @@
   }
 }
 @media (max-width: 800px) {
+    .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .logo-footer {
     margin-left: 20px;
   }
@@ -89,8 +93,5 @@
     opacity: .1;
     margin-top: 240px;
   }
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 }
